@@ -41,17 +41,12 @@ const lands = [
 // Chapter 1
 // ============
 const makeMiddleEarth = () => {
-
   // HINT: Make a console.log for each of your functions to make sure that, when you click, the correct function is being called!
-
   console.log("Trying to make middle earth.");
-
   // 1. create a section tag with an id of middle-earth
 const mapTitle = "<section id = middle-earth>Middle-Earth</section>"
-
   // 2. append the section to the body of the DOM.
 $("body").append(mapTitle)
-
   // 3. use a for loop to iterate over the lands array that does the following:
 for (let i = 0; i < lands.length; i ++){
   let $landsTitles = (lands[i]);
@@ -75,23 +70,16 @@ for (let i = 0; i < lands.length; i ++){
 // Chapter 2
 // ============
 const makeHobbits = () => {
-
   console.log('Make hobbits');
-
   // 1. display an unordered list of the hobbits in the shire.
-$('#The-Shire').append('<ul></ul>');
-for (let i = 0; i < hobbits.length; i++){
-let $hobbitsNames = hobbits[i]; 
-$('ul').append('<li class = hobbit>' + $hobbitsNames + '</li>')
-
-}
-
   // 2. give each hobbit a class of "hobbit"
-
   // hint: create a 'ul' outside the loop upon which to append the 'li's
-
   // hint: get 'The-Shire' by using its id
-
+  $('#The-Shire').append('<ul></ul>');
+  for (let i = 0; i < hobbits.length; i++){
+  let $hobbitsNames = hobbits[i]; 
+  $('ul').append('<li class = hobbit>' + $hobbitsNames + '</li>')
+  }
 };
 
 // COMMIT YOUR WORK
@@ -101,17 +89,12 @@ $('ul').append('<li class = hobbit>' + $hobbitsNames + '</li>')
 // Chapter 3
 // ============
 const keepItSecretKeepItSafe = () => {
-
   // 1. create an empty div with an id of 'the-ring'
-$('body').append('<div id = the-ring></div>');
-
   // 2. add the ring as a child of Frodo
-$('#the-ring').appendTo($('li')[0]);
-
   // hint: Frodo does not have an id, but there is a command to retrieve all elements with a certain class. This should give you an array for you to access . . .
-
   // when you think you have given Frodo the ring, check in your Elements tab
-
+$('body').append('<div id = the-ring></div>');
+$('#the-ring').appendTo($('li')[0]);
 };
 
 // COMMIT YOUR WORK
@@ -121,12 +104,14 @@ $('#the-ring').appendTo($('li')[0]);
 // Chapter 4
 // ============
 const makeBaddies = () => {
-
   // 1. display an unordered list of baddies in Mordor
-
   // 2. give each of the baddies a class of "baddy"
-
   // 3. remember to append them to Mordor
+$('#Mordor').append('<ul></ul>');
+for (i = 0; i < baddies.length; i ++){
+  let $baddiesNames = baddies[i];
+  $(('<li class = baddies>' + $baddiesNames + '</li>')).appendTo($('#Mordor'))
+}
 };
 
 // COMMIT YOUR WORK
