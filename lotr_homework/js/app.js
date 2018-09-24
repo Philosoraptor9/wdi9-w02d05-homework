@@ -66,7 +66,7 @@ for (let i = 0; i < lands.length; i ++){
 
   //   3d. appends each land to the middle-earth section
 
-};
+}; 
 
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 1 complete - Made Middle Earth".
@@ -79,9 +79,11 @@ const makeHobbits = () => {
   console.log('Make hobbits');
 
   // 1. display an unordered list of the hobbits in the shire.
+$('#The-Shire').append('<ul></ul>');
 for (let i = 0; i < hobbits.length; i++){
 let $hobbitsNames = hobbits[i]; 
-$("#The-Shire").append('<ul><li class = hobbit>' + $hobbitsNames + '</li></ul>');
+$('ul').append('<li class = hobbit>' + $hobbitsNames + '</li>')
+
 }
 
   // 2. give each hobbit a class of "hobbit"
@@ -101,8 +103,10 @@ $("#The-Shire").append('<ul><li class = hobbit>' + $hobbitsNames + '</li></ul>')
 const keepItSecretKeepItSafe = () => {
 
   // 1. create an empty div with an id of 'the-ring'
+$('body').append('<div id = the-ring></div>');
 
   // 2. add the ring as a child of Frodo
+$('li')[0].append('the-ring');
 
   // hint: Frodo does not have an id, but there is a command to retrieve all elements with a certain class. This should give you an array for you to access . . .
 
