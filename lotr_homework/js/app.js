@@ -180,13 +180,10 @@ $('.hobbit').appendTo('#the-fellowship');
 // Chapter 9
 // ============
 const theBalrog = () => {
-
   // 1. change the 'Gandalf' textNode to 'Gandalf the White'
-
   // 2. add a class "the-white" to this element
-
   // 3. in the style.css file, add a css rule to make elements of the class "the-white" have a white background and a grey border
-
+$('.buddies:contains("Gandalf the Grey")').replaceWith('<li class = the-white>Gandalf the White</li>');
 };
 
 // COMMIT YOUR WORK
