@@ -106,7 +106,7 @@ const keepItSecretKeepItSafe = () => {
 $('body').append('<div id = the-ring></div>');
 
   // 2. add the ring as a child of Frodo
-$('li')[0].append('the-ring');
+$('#the-ring').appendTo($('li')[0]);
 
   // hint: Frodo does not have an id, but there is a command to retrieve all elements with a certain class. This should give you an array for you to access . . .
 
