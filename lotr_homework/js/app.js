@@ -224,7 +224,9 @@ const weWantsIt = () => {
   // 1. Create a div with an id of 'gollum' and add it to Mordor
   // 2. Move the ring from Frodo and give it to Gollum
   // 3. Move Gollum into Mount Doom
-
+$('#Mordor').append('<div id = gollum>Gollum</div>');
+$('#the-ring').appendTo('#gollum');
+$('#gollum').appendTo('#mount-doom');
 };
 
 // COMMIT YOUR WORK
