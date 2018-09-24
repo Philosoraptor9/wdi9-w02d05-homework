@@ -193,13 +193,11 @@ $('.buddies:contains("Gandalf the Grey")').replaceWith('<li class = the-white>Ga
 // Chapter 10
 // ============
 const hornOfGondor = () => {
-
   // 1. create a pop-up alert that the horn of gondor has been blown
-
   // 2. Boromir's been killed by the Uruk-hai! Put a linethrough on Boromir's name
-
   // 3. Tricky: Remove the Uruk-Hai from the Baddies on the page
-
+alert('The Horn of Gondor has been blown!');
+$('.buddies:contains("Boromir")').css('text-decoration', 'line-through');
 };
 
 // COMMIT YOUR WORK
