@@ -54,7 +54,6 @@ $("body").append(mapTitle)
 
   // 3. use a for loop to iterate over the lands array that does the following:
 for (let i = 0; i < lands.length; i ++){
-  console.log(lands[i]);
   let $landsTitles = (lands[i]);
   $("#middle-earth").append('<article id =' + $landsTitles + '><h1>' + $landsTitles + '</h1><article')
 }
@@ -80,6 +79,10 @@ const makeHobbits = () => {
   console.log('Make hobbits');
 
   // 1. display an unordered list of the hobbits in the shire.
+for (let i = 0; i < hobbits.length; i++){
+let $hobbitsNames = hobbits[i]; 
+$("#The-Shire").append('<ul><li class = hobbit>' + $hobbitsNames + '</li></ul>');
+}
 
   // 2. give each hobbit a class of "hobbit"
 
