@@ -207,11 +207,11 @@ $('.buddies:contains("Boromir")').css('text-decoration', 'line-through');
 // Chapter 11
 // ============
 const itsDangerousToGoAlone = () => {
-
   // 1. take Frodo and Sam out of the fellowship and move them to Mordor (they don't need to be inside a ul in Mordor)
-
   // 2. add a div with an id of 'mount-doom' to Mordor
-
+$('.hobbit:contains("Frodo Baggins")').appendTo($('#Mordor'));
+$('.hobbit:contains("Samwise \'Sam\' Gamgee")').appendTo($('#Mordor'));
+$('#Mordor').append('<div id = mount-doom>Mount Doom</div>');
 };
 
 // COMMIT YOUR WORK
@@ -221,11 +221,8 @@ const itsDangerousToGoAlone = () => {
 // Chapter 12
 // ============
 const weWantsIt = () => {
-
   // 1. Create a div with an id of 'gollum' and add it to Mordor
-
   // 2. Move the ring from Frodo and give it to Gollum
-
   // 3. Move Gollum into Mount Doom
 
 };
