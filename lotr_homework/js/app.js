@@ -150,11 +150,9 @@ const leaveTheShire = () => {
 // Chapter 7
 // ============
 const beautifulStranger = () => {
-
   // 1. change the buddy 'Strider' textnode to "Aragorn"
-
   // hint: You can get a list of elements by tag name, such as 'aside'
-
+$('.buddies:contains("Strider")').replaceWith('<li>Aragorn</li>')
 };
 
 // COMMIT YOUR WORK
